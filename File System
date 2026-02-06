@@ -1,0 +1,14 @@
+Absolute vs Relative Paths
+Absolute: Starts from root / → /home/user/documents/file.txt
+Relative: Relative to current directory → documents/file.txt or ../sibling/file.txt
+Directories and Hidden Files
+Hidden files/directories start with . (e.g., .git, .bashrc). View with ls -a.
+Inode Concept
+Every file/directory has an inode (index node) storing metadata (permissions, size, location). File names are just pointers to inodes.
+
+```bash
+pwd                          # /home/user
+ls -l                        # list with details
+ls -a                        # show hidden files
+ls -i                        # show inode numbers
+```

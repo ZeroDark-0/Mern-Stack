@@ -1,0 +1,2 @@
+V8 Engine: Compiles JS to machine code.
+Event-driven model: Event loop handles async operations via callbacks, promises, etc.

@@ -1,0 +1,28 @@
+-> Use nvm to manage versions:
+```bash
+nvm install node      # latest
+nvm use node
+```
+
+-> npm:
+```bash
+npm init -y           # create package.json
+npm install express   # install package
+npm install -g nodemon # global install
+```
+
+-> package.json structure:
+```bash
+{
+  "name": "my-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
+```

@@ -1,0 +1,10 @@
+```js
+const path = require('path');
+const os = require('os');
+const process = require('process');
+
+console.log(path.join(__dirname, 'files', 'data.txt'));
+console.log(os.platform(), os.homedir());
+console.log(process.argv);        // command-line arguments
+console.log(globalThis);         // global object (same as global in Node)
+```

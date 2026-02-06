@@ -1,0 +1,16 @@
+```bash
+grep "pattern" file.txt      # search for pattern
+grep -r "pattern" .          # recursive search
+grep -i "case" file.txt      # case-insensitive
+find . -name "*.js"          # find files by name
+find . -type f -mtime -7     # files modified in last 7 days
+chmod 755 script.sh          # set permissions (owner: rwx, others: rx)
+chmod u+x file               # add execute permission for user
+command1 | command2          # pipe output of first to second
+ls -l > output.txt           # redirect stdout to file
+command >> file              # append to file
+command 2> error.log         # redirect stderr
+command &                    # run in background
+fg                           # bring background job to foreground
+jobs                         # list background jobs
+```

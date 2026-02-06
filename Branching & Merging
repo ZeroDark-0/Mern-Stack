@@ -1,0 +1,10 @@
+```bash
+git branch feature-x                    # create branch
+git checkout feature-x                  # switch to branch
+git switch -c feature-x                 # create and switch
+git merge feature-x                     # merge into current branch
+git branch -d feature-x                 # delete branch
+
+# Conflict resolution example (manual edit after conflict markers)
+# <<< HEAD ... === ... >>> feature-x
+```

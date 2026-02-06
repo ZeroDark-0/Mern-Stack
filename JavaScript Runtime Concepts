@@ -1,0 +1,2 @@
+Single-threaded model: JS executes one thing at a time.
+Blocking vs Non-blocking: Blocking waits (e.g., fs.readFiync); non-blocking continues (e.g., fs.readFile with callback).

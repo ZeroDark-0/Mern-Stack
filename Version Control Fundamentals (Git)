@@ -1,0 +1,8 @@
+```bash
+git init                     # initialize repo
+git clone https://github.com/user/repo.git   # clone remote
+git add file.txt             # stage file
+git add .                    # stage all
+git reset file.txt           # unstage file
+git status                   # see staged/unstaged changes
+```

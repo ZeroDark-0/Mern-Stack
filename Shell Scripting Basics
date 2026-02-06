@@ -1,0 +1,27 @@
+Sample Script: 'hello.sh'
+
+```bash
+#!/bin/bash
+# Variables
+name="World"
+echo "Hello, $name!"
+
+# Conditionals
+if [ "$name" == "World" ]; then
+    echo "Welcome!"
+else
+    echo "Who are you?"
+fi
+
+# Loops
+for i in {1..5}; do
+    echo "Count: $i"
+done
+
+while [ $i -gt 0 ]; do
+    echo "Countdown: $i"
+    ((i--))
+done
+```
+
+Run with: `chmod +x hello.sh && ./hello.sh`

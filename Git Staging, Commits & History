@@ -1,0 +1,9 @@
+```bash
+git commit -m "Initial commit"          # commit staged changes
+git diff                                # show unstaged changes
+git diff --staged                       # show staged changes
+git log                                 # commit history
+git log --oneline                       # compact view
+git reset --soft HEAD~1                 # undo last commit, keep changes staged
+git reset --hard HEAD~1                 # undo last commit, discard changes
+```

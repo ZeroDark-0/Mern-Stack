@@ -1,0 +1,18 @@
+```bash
+pwd                          # print working directory
+ls                           # list files
+ls -l                        # detailed list
+ls -la                       # detailed + hidden
+cd /path/to/dir              # change directory
+cd ..                        # go up one level
+cd ~                         # go to home
+cd                           # go to home
+mkdir newdir                 # make directory
+mkdir -p parent/child        # make nested directories
+rmdir emptydir               # remove empty directory
+rm -r dir                    # remove directory and contents
+touch file.txt               # create empty file or update timestamp
+cat file.txt                 # display file content
+less file.txt                # view file with scrolling
+man ls                       # manual for ls command
+```

@@ -1,0 +1,5 @@
+Unix Philosophy: Write programs that do one thing well, work together, and handle text streams.
+Kernel vs Shell: Kernel is the core of the OS managing hardware/resources; Shell is the command interpreter (e.g., bash, zsh) that lets users interact with the kernel.
+CLI vs GUI: CLI (Command Line Interface) is text-based, fast, scriptable; GUI is visual and user-friendly but less automatable.
+Filesystem Hierarchy: Standard layout — /bin (binaries), /etc (config), /home (user files), /var (logs), /usr (user programs), etc.
+Terminal Usage: Open terminal (Ctrl+Alt+T on Linux, Terminal app on macOS), type commands, use arrow keys for history, Tab for autocomplete.

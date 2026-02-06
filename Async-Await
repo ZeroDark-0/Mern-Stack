@@ -1,0 +1,17 @@
+```js
+async function run() {
+  try {
+    const data = await fs.readFile('file.txt', 'utf8');
+    console.log(data);
+  } catch (err) {
+    console.error(err);
+  }
+}
+run();
+
+// Parallel execution
+const [data1, data2] = await Promise.all([
+  fs.readFile('a.txt', 'utf8'),
+  fs.readFile('b.txt', 'utf8')
+]);
+```
