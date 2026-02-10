@@ -1,0 +1,12 @@
+math.js:
+```js
+function add(a, b) { return a + b; }
+module.exports = { add };
+```
+
+index.js:
+```js
+const { add } = require('./math');
+console.log(add(5, 3));   // 8
+// Modules are cached — requiring same file multiple times returns same object
+```

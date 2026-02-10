@@ -1,0 +1,31 @@
+cli-tool.js
+
+```js
+#!/usr/bin/env node
+const fs = require('fs');
+const path = require('path');
+
+const args = process.argv.slice(2);
+if (args.length === 0) {
+  console.log('Usage: cli-tool <filename>');
+  process.exit(1);
+}
+
+const file = path.resolve(args[0]);
+fs.readFile(file, 'utf8', (err, data) => {
+  if (err) {
+    console.error('Error reading file:', err.message);
+    process.exit(1);
+  }
+  console.log('File content:\n');
+  console.log(data);
+});
+```
+
+Make executable:
+
+```bash
+chmod +x cli-tool.js
+# Add to package.json "bin": { "mytool": "./cli-tool.js" }
+npm link   # makes it globally available as `mytool`
+```
