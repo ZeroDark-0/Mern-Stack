@@ -1,0 +1,88 @@
+﻿Step 1: Configure Git globally
+
+Before working with Git, we must tell Git who we are. This information is attached to every commit we make.
+```
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+```
+
+To verify the configuration:
+```
+git config --global --list
+```
+
+Step 2: Create the project directory
+
+We create a new folder named inventory_system which will hold the entire project.
+```
+mkdir inventory_system
+cd inventory_system
+```
+
+Step 3: Initialize Git repository
+
+This step turns the project folder into a Git repository so that all changes can be tracked using version control.
+```
+git init
+```
+
+Step 4: Initialize Node.js project using npm
+
+npm init creates a package.json file, which stores metadata, dependencies, and scripts for the Node.js project.
+```
+npm init -y
+```
+The -y flag accepts default values automatically.
+
+Step 5: Create required project folders
+
+We create separate folders to organize code, logs, and configuration files.
+
+```
+mkdir src
+mkdir logs
+mkdir config
+```
+
+src → application source code
+
+logs → application logs
+
+config → configuration files
+
+
+
+Step 6: Create the entry file (index.js)
+
+This file will act as the starting point of the Node.js application.
+
+```
+touch src/index.js
+```
+Add a startup message in the index.js:
+```
+echo "console.log('Inventory System starting...');" > src/index.js
+```
+
+Step 7: Create .gitignore file
+
+We use .gitignore to prevent unnecessary files from being tracked by Git. The node_modules folder should never be committed.
+```
+touch .gitignore
+echo "node_modules/" > .gitignore
+```
+
+Step 8: First commit – Initial project setup
+
+This commit saves the initial structure of the project.
+```
+git add .
+git commit -m "Initial project with this message"
+```
+
+Step 9: Display compact commit history
+
+This command shows a concise, readable commit history.
+```
+git log --oneline --graph --decorate
+```
